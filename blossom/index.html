@@ -1,0 +1,72 @@
+<!-- Created using Proce5.in v0.1.0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blossom</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="canvas-container">
+    <canvas id="sketch-canvas" data-processing-sources="blossom.pde">
+      <div class="width">
+        <p>Your browser does not support the Canvas element.</p>
+      </div>
+    </canvas>
+  </div>
+  
+  <div class="readme-container">
+    <h1>Blossom</h1>
+
+<p>This is a sketch to test the <a href="https://github.com/proce5in/gem">Proce5.in gem</a>.</p>
+
+<h2>Embeded sketch</h2>
+
+<p>Using Proce5.in, you can embed sketches in the Markdown syntax. For exemple:</p>
+            <div class="canvas-container">
+              <canvas id="embeded-sketch-0"></canvas>
+            </div>
+            <script type="text/processing" data-processing-target="embeded-sketch-0">
+            //<![CDATA[
+              void setup() {
+  size(750, 200);
+  mouseY = 100;
+}
+
+void draw() {
+  background(0);
+  text("I'm a pretty sketch", mouseX, mouseY);
+}
+
+            //]]
+            </script>
+
+            <div class="embeded-sketch-0 embeded-sketch-code"><div class="highlight"><pre><span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">size</span><span class="o">(</span><span class="mi">750</span><span class="o">,</span> <span class="mi">200</span><span class="o">);</span>
+  <span class="n">mouseY</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">background</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+  <span class="n">text</span><span class="o">(</span><span class="s">&quot;I&#39;m a pretty sketch&quot;</span><span class="o">,</span> <span class="n">mouseX</span><span class="o">,</span> <span class="n">mouseY</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div></div>
+
+<p>To embed a sketch, simply insert a block of code inside between a pair of triple backticks and specify <code>processing</code> as the language.</p>
+<pre data-language="">```processing
+void draw() {
+  // ...
+}
+```
+</pre>
+<p>If you&#39;d like to insert snippet of Processing code without it being turned into a sketch, use <code>java</code> for the language.</p>
+
+<h2>Hosting</h2>
+
+<p>Since Proce5.in projects are composed of static files, hosting can be easily done on Github Pages or Dropbox. </p>
+
+  </div>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+</body>
+</html>
