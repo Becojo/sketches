@@ -2,9 +2,9 @@
 
 This is a sketch to test the [Proce5.in gem](https://github.com/proce5in/gem).
 
-## Embeded sketch
+## Embedded sketch
 
-Using Proce5.in, you can embed sketches in the Markdown syntax. For exemple:
+Using Proce5.in, you can embed sketches in the Markdown syntax. For example:
 
 ```processing
 void setup() {
